@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title> formulario </title>
+	<body bgcolor="pink">
+
+	<style type="text/css">
+		*{font-family: arial;}
+
+		h1 {text-align: center;
+		font-size:1.5em;
+		text-decoration: underline;}
+		form{text-align: center;}
+
+		div{border-style: solid;
+			border-color: green;
+			border-width: 0.4em;
+			margin-top: 4em;
+			margin-left: 11em;
+			margin-right: 11em;}
+
+		</style>
+</head>
+<body>
+
+	<br>
+	<h1>Llenar el siguente formulario</h1>
+	<h1>para reservar matricula</h1>
+	<br>
+	<form name="formulario">
+
+		<spam>Nombre</spam> <input type="text" id="Nombre" placeholder="Primer Nombre" maxlength="15">
+		<br>
+		<br>
+
+		<spam>Apellido</spam> <input type="text" id="apell" placeholder="Primer apellido" maxlength="15">
+		<br>
+		<br>
+
+		<spam> ID </spam> <input type="text" id="id" placeholder="# de identidad" maxlength="15">
+		<br>
+		<br>
+
+		<spam> Sexo: </spam>
+		<spam>Femenino </spam><input type="radio" id="femenino">
+		<spam>Masculino </spam><input type="radio" id="masculino">
+		<br>
+		<br>
+		<input type="button" onclick="activar()" value="enviar">
+	</form>
+	<script>
+		function activar(){
+			var nomb = document.getElementById("nombre").value;
+			if(nomb=="")
+		{alert("escriba su nombre");return;}
+	var  apell =document.getElementById("apell").value;
+	if (apell=="") 
+		{alert("Escriba su apellido");
+	return;}
+	var  id =document.getElementById("id").value;
+	if (id=="") 
+		{alert("escriba su# de identidad");
+	return;}
+	var sex =document.getElementById("femenino");
+	var sexm =document.getElementById("masculino");
+	return;
+    }
+</script>
+
+</body>
+<a href="index.html">inicio</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+              (c) Todos los derechos reservados Diseñado por <a href="mailto: taniaaguilar468@gmail.com" class="email">Tania Josselyn Aguilar, Seccion 3, 12 avo Informatica, IHER</a>-2021
+        </p>
+
+</html>
